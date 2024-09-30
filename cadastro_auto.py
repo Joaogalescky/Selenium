@@ -24,7 +24,7 @@ driver = webdriver.Chrome(service=servico, options=chrome_options)
 driver.maximize_window()
 
 # Abre a página
-driver.get("http://127.0.0.1:5501/page/index.html#")
+driver.get("https://acpedrosa.github.io/Cadastro_teste/")
 
 #criando objeto wait
 wait = WebDriverWait(driver, 10)
