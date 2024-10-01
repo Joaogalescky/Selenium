@@ -1,6 +1,6 @@
 # Automação Web com Selenium
 
-Neste repositório, você encontrará um guia passo a passo para aprender a realizar automação web utilizando a biblioteca Selenium. O objetivo é ensinar como automatizar tarefas repetitivas em navegadores.
+Neste repositório, você encontrará um guia passo a passo para aprender a realizar automação web utilizando a biblioteca Selenium. O objetivo é ensinar como automatizar o processo de preenchimento de um cadastro.
 
 ## Índice
 
@@ -43,7 +43,7 @@ Antes de começar, você precisará ter instalado:
 
 ## Exemplo de Uso
 
-Aqui está um exemplo básico de como usar o Selenium para abrir uma página web e realizar uma ação simples, como buscar algo no Google:
+Exemplo básico de como usar o Selenium para abrir uma página web e realizar uma ação simples, como buscar algo no Google:
 
 ```python
 from selenium import webdriver
