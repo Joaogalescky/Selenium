@@ -1,6 +1,6 @@
 # Automação Web com Selenium
 
-Neste repositório, você encontrará um guia passo a passo para aprender a realizar automação web utilizando a biblioteca Selenium. O objetivo é ensinar como automatizar o processo de preenchimento de um cadastro.
+Neste repositório, você encontrará conceitos relacionados ao framework Selenium e as ferramentas que ele utiliza para as Automações Web. Além disso, há nesse repositório um exemplo de código de como automatizar o processo de preenchimento de um formulário de cadastro.
 
 ## Índice
 
