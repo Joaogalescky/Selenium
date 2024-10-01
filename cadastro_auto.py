@@ -1,7 +1,14 @@
 '''
-    author: Ana Caroline Pedrosa e Silva
-    date: 29 - 09 - 2024
-    name: cadastro_auto.py
+Preenchendo formulário de cadastro de forma automática - Selenium
+
+Name: cadastro_auto.py
+Descripition: script para preencher um formulário de cadastro de forma automática utilizando o Selenium
+
+Author: Ana Caroline P. e Silva
+Version: 4.0 
+Creation Date: 27/09/2024
+Last Modified: 01/10/2024
+
 '''
 import time
 from selenium import webdriver
@@ -100,6 +107,4 @@ button = wait.until(
 )
 
 button.click()
-
-
 
