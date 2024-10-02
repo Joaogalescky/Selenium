@@ -57,11 +57,10 @@ Cada navegador (como Chrome, Firefox, Safari, etc.) possui uma implementação e
 
 Um **localizador** é uma forma de identificar elementos em uma página, utilizado como argumento nos métodos de busca de elementos. O Selenium oferece 8 formas diferentes de localizar os elementos web. 
 
-3.3 MANIPULAÇÃO DE ELEMENTOS
 
-	3.4 ESTRATÉGIAS DE ESPERA
+3.3 ESTRATÉGIAS DE ESPERA
 
-	Um dos principais desafios na automação de testes com Selenium é garantir que a página da web esteja pronta antes que você tente realizar uma ação. Isso é chamado de ***race condition***. 
+Um dos principais desafios na automação de testes com Selenium é garantir que a página da web esteja pronta antes que você tente realizar uma ação. Isso é chamado de ***race condition***. 
 
 * ***Race Condition*****:** Em alguns momentos, o navegador pode estar carregado e pronto, mas os elementos que você deseja interagir (como botões ou campos de texto) ainda podem não estar disponíveis. Isso acontece porque a página pode carregar lentamente, ou porque alguns elementos são adicionados ou alterados por JavaScript depois que a página já foi carregada.
 
