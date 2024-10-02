@@ -11,6 +11,7 @@ Last Modified: 01/10/2024
 
 '''
 import time
+import webbrowser
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -24,33 +25,36 @@ chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)  # Permite que o navegador permaneça aberto
 
 servico = Service(ChromeDriverManager().install())
-
 driver = webdriver.Chrome(service=servico, options=chrome_options)
 
-#maximizar a janela
+# Maximizar a janela
 driver.maximize_window()
 
 # Abre a página
 driver.get("https://acpedrosa.github.io/Cadastro_teste/")
 
-#criando objeto wait
+# Criando objeto wait
 wait = WebDriverWait(driver, 10)
 
 # Espera até que o campo de texto esteja visível e habilitado
 text_box = wait.until(
     EC.element_to_be_clickable((By.ID, "firstname"))
 )
+# Preenche com o nome
+text_box.send_keys("João")
 
-#preenche com o nome
-text_box.send_keys("Ana Caroline")
-
-time.sleep(4)
+# time.sleep(4)
 
 # Preenchendo o sobrenome
 lastname_box = wait.until(
-    EC.element_to_be_clickable((By.ID, "lastname"))
+    EC.element_to_be_clickable((By.ID, "lastname")) #ou By.NAME
 )
+lastname_box.send_keys("Vitor Campõe Galescky")
 
-lastname_box.send_keys("Pedrosa")
+# time.sleep(4)
 
-time.sleep(4)
+# Preenchendo o email
+email_box = wait.until(
+    EC.element_to_be_clickable((By.ID, "email"))
+)
+email_box.send_keys("joao@email.com")
